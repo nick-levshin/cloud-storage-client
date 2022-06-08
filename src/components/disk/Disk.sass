@@ -1,0 +1,75 @@
+@import '../../utils/colors'
+  
+.disk 
+  margin-top: 20px
+  height: calc(100vh - 50px - 40px)
+
+  &__btns 
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &__left
+    display: flex
+    align-items: center
+
+  &__create
+    margin-left: 10px
+    border: 1px solid $font-color
+    border-radius: 20px
+    padding: 6px
+    cursor: pointer
+
+  &__upload
+    &-input
+      display: none
+
+    &-label
+      border: 2px dashed $font-color
+      cursor: pointer
+      margin-left: 10px
+      padding: 3px
+
+  &__right
+    display: flex
+    align-items: center
+
+  &__search
+    width: 150px
+    margin-right: 30px
+
+  &__select
+    color: $font-color
+    outline: none
+    background-color: $background-color
+    border: none
+    position: relative
+    margin-left: 3px
+    margin-right: 30px
+    cursor: pointer
+
+  &__plate, &__list
+    width: 15px
+    height: 15px
+    cursor: pointer
+    background: no-repeat center center
+    border: none
+    outline: none
+    background-size: cover  
+    margin-left: 7px
+
+  &__plate
+    background-image: url('../../assets/images/view-2.svg')
+
+  &__list
+    background-image: url('../../assets/images/view-3.svg')
+  
+.drop-area
+  width: calc(100% - 40px)
+  height: calc(100vh - 50px - 40px)
+  margin: 20px
+  border: 2px dashed $font-color
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 40px

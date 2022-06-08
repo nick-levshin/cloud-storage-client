@@ -1,0 +1,38 @@
+.popup 
+  background-color: rgba(0,0,0, .2)
+  position: absolute
+  right: 0
+  left: 0
+  bottom: 0
+  top: 0
+  display: flex
+  justify-content: center
+  align-items: center
+
+  &__content
+    width: 400px
+    background-color: #fff
+    padding: 20px
+    border-radius: 12px
+    display: flex
+    flex-direction: column
+
+  &__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  input
+    margin: 20px 0
+
+  &__close
+    width: 20px
+    height: 20px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+
+  &__create
+    align-self: end
+    padding: 3px

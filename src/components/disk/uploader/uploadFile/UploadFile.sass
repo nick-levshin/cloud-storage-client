@@ -1,0 +1,40 @@
+@import '../../../../utils/colors'
+  
+.upload-file
+  background-color: $background-color
+  border-radius: 8px
+  margin: 5px 0
+  padding: 5px 10px
+
+  &__header
+    display: flex
+    justify-content: space-between
+
+
+  &__progress-bar 
+    height: 1rem
+    border-radius: 8px
+    background-color: $font-color
+    display: flex
+    margin: 3px 0
+    position: relative
+
+  &__upload-bar 
+    background-color: green
+    width: 0
+    border-radius:  8px
+
+  &__percent
+    color: $background-color
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+
+  &__close
+    width: 18px
+    height: 18px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer

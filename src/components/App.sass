@@ -1,0 +1,35 @@
+@import '../utils/colors'
+
+*, *::after, *::before 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  color: $font-color
+
+body 
+  background-color: $background-color
+
+#root 
+  width: 100%
+
+.App
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.wrap
+  max-width: 1140px
+  width: 100%
+  display: flex
+  flex-direction: column
+  padding: 0 20px
+
+.btn
+  width: 58px
+  height: 34px
+  border: 1px solid $font-color
+  border-radius: 20px
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
